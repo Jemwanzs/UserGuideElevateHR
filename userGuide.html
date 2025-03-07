@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software User Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d6d0e0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .h1{
+            font-size: 20px;
+            color: #401b5f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: left;
+            background-color: #401b5f;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card {
+            background: #1F1726;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card i {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 14px;
+            color: white;
+        }
+        .card p {
+            font-size: 10px;
+            color: white;
+            line-height: 1.6;
+        }
+        .download-btn {
+            background-color: #401b5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .download-btn:hover {
+            background-color: #5e4473;
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Software User Guide</h1>
+    <button class="download-btn" onclick="downloadGuide()">Download Guide</button>
+    <div class="container">
+        <div class="card">
+            <i class="fas fa-user-plus"></i>
+            <h3>Step 1: Admin Account Opening</h3>
+            <p>
+                ✅ Admin Personal Details<br>
+                ✅ Admin Login Details<br>
+                ✅ Initial Organization Details
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-building"></i>
+            <h3>Step 2: Organization Creation</h3>
+            <p>
+                ✅ Basic Information<br>
+                ✅ Contacts<br>
+                ✅ Location<br>
+                ✅ Certificate of Incorporation<br>
+                ✅ KRA Documents
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-cogs"></i>
+            <h3>Step 3: Organization Settings</h3>
+            <p>
+                🔹 Set up HR and Finance/Payroll departments:<br>
+                ✅ Departments<br>
+                ✅ Job Titles<br>
+                ✅ Job Grades<br>
+                ✅ Employee Number Formats<br>
+                ✅ Payroll Deductions (Statutory & Custom)<br>
+                ✅ Payroll Benefits (Regular & Irregular, Cash & Non-Cash)<br>
+                ✅ Roles and Permissions:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;✔ Super Admin<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;✔ HR Manager<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;✔ Manager<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;✔ Employee
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Step 4: Employee Management</h3>
+            <p>
+                ✅ Add Employees (Bulk Upload / Single Entry)<br>
+                ✅ Post Bulk Upload Actions (Documents, Next of Kin, Personal Info)<br>
+                ✅ Manage Employee Contract, Benefits, and Deductions<br>
+                ✅ Set Employee Status (Active / Inactive)
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-plane"></i>
+            <h3>Step 5: Leave Management</h3>
+            <p>
+                ✅ Create Leave Types<br>
+                ✅ Build Leave Policies & Rules<br>
+                ✅ Track Leave Applications<br>
+                ✅ Use Reports & Analytics<br>
+                ✅ Utilize the Calendar View
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-money-bill"></i>
+            <h3>Step 6: Manage Salary Advance</h3>
+            <p>
+                ✅ Create Salary Advance Limits & Rules<br>
+                ✅ Track Applications<br>
+                ✅ Use Reports & Analytics
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-calculator"></i>
+            <h3>Step 7: Payroll Management</h3>
+            <p>
+                ✅ Create Payroll Cycle (Tax Period)<br>
+                ✅ Select Employees for Payroll Cycle<br>
+                ✅ Approve Payroll<br>
+                ✅ Send Payslips<br>
+                ✅ Complete Payouts
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Step 8: Reports</h3>
+            <p>
+                ✅ People Management Reports<br>
+                ✅ Payroll Processing Reports<br>
+                ✅ Statutory Compliance Reports<br>
+                ✅ Benefits & Deductions Reports<br>
+                ✅ Leave Reports<br>
+                ✅ Salary Advance Reports
+            </p>
+        </div>
+    </div>
+    <script src="userGuide.js"></script>
+    <script src="protectCode.js"></script>
+</body>
+</html>
