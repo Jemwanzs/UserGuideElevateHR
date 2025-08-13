@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software User Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d6d0e0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .h1{
+            font-size: 20px;
+            color: #401b5f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: left;
+            background-color: #401b5f;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card {
+            background: #1F1726;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card i {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 14px;
+            color: white;
+        }
+        .card p {
+            font-size: 10px;
+            color: white;
+            line-height: 1.6;
+        }
+        .download-btn {
+            background-color: #401b5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .download-btn:hover {
+            background-color: #5e4473;
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Software User Guide</h1>
+    <button class="download-btn" onclick="downloadGuide()">Download Guide</button>
+    <div class="container">
+        <div class="card">
+            <i class="fas fa-user-plus"></i>
+            <h3>Step 1: Sign-Up</h3>
+            <p>
+                ✅ Admin Personal Details<br>
+                ✅ Admin Login Details<br>
+                ✅ Initial Organization Details<br>
+                -> Name<br>
+                -> Location Address<br>
+                -> Industry<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-building"></i>
+            <h3>Step 2: Settings</h3>
+            <p>
+                ✅ Your Organizations -> Manage Workspaces / Branches / Businesses<br>
+                (1)Open a workspace<br>
+                -> Open a workspace<br>
+                -> Manage Profile<br>
+                -> Manage Preferences<br>
+                -> Manage Compliance & KYC Documents<br>
+                -> Open a Operations<br>
+                - Business working days<br>
+                - Working hours<br>
+                -> Manage Workflows<br>
+                -Create Approval Workflows (after adding people) <br>
+                <br>
+                ✅ Current Settings Tab.<br>
+                -> Manage Departments<br>
+                -> Manage Employee Groups<br>
+                -> Manage Employee Number Formats<br>
+                -> Manage Unique Job Grades<br>
+                -> Manage Unique Job Titles<br>
+                -> Manage Payroll Deductions<br>
+                - Statutory Deductions<br>
+                - Custom Deductions<br>
+                - Fixed, %ge based, Graduated scale based, Allowable deductions & non allowable<br>
+                -> Manage Benefits & Allowances<br>
+                - Cash<br>
+                - Non Cash benefits<br>
+                - Manage Tax limits and implications for allowances and benefits<br>
+                <br>
+                ✅ Modules Tab.<br>
+                -> Manage Modules Visibility<br>
+                -> Toggle on and off after searching a module<br>
+                -> Edit Module Naming; e.g. Leave Module -> to Time-off<br>
+                -> The Goal is to automate billing here<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Step 3: Employee Management</h3>
+            <p>
+                ✅ Employee Onboarding to the Platform
+                -> Add one-by-one<br>
+                -> Bulk Upload Employees<br>
+                - Download Template<br>
+                - Fill the Template and Upload all employees<br>
+                <br>
+                ✅ Manage Employees<br>
+                - Multi-select employee<br>
+                - Send Welcome Message<br>
+                - Message goes with Login credentials to ESS + Mobile App<br>
+                - Search, and filters available<br>
+                ✅ Click to Open an Employee's Directory<br>
+                -> Manage Personal Details<br>
+                -> Manage Next of Kin<br>
+                -> Manage Employee Documents<br>
+                - Unpload, Rename, and Assign dates to documents<br>
+                - PDF Scans, and or Images<br>
+                -> Manage Job Details<br>
+                - Job position (enter the start date of the new job position)<br>
+                - Position assignment type (Assign whether Permanent or Contract | ACTING | INTERIM)<br>
+                - Employee Type (Primary | Secondary | Contractor)<br>
+                - Employee's Department (provision for nested departments availed)<br>
+                - Supervisors (Add or update line managers)<br>
+                - Manage Job Details<br>
+                - Track Employement History / Journey<br>
+                -> Manage Employee Compensations<br>
+                - View Last Payroll analytcis for the employee<br>
+                - Change and Update Basic Salary<br>
+                - Provide effective date of the Salary<br>
+                - Manage Benefits for the employee (add run periods)<br>
+                - Define the period for the allowances<br>
+                - Manage Deductions (add run periods)
+                - Manage Custom Tax Relief benefits<br>
+                - Track the Compensation hostory<br>
+                ✅ Assing Roles | Reset Password | Terminate<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-plane"></i>
+            <h3>Step 4: Leave Management</h3>
+            <p>
+                ✅ Create and Manage Leave Types<br>
+                ✅ Assign rules and policies to the leave types<br>
+                ✅ Comfirm your approval workflows from Org. Settings<br>
+                ✅ Advise employees to make leave requests using mobile apps and or Web ESS<br>
+                ✅ Track Leave Requests<br>
+                ✅ Supervisors, Line Managers can approve and reject leave requests right from their Web ESS portals<br>
+                ✅ Check and validate leave balance<br>
+                ✅ Upload employee leave balances for a new onboadring<br>
+                ✅ Track leave reports and analytics<br>
+                ✅ Utilize the Leave Calendar Provision<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-money-bill"></i>
+            <h3>Step 5: Manage Salary Advance</h3>
+            <p>
+                ✅ Visit 'Org. Settings' -> 'Preferences' -> 'Salary Advance'<br>
+                ✅ Manage Eligibility rules<br>
+                ✅ Employees to apply using their Mobile App or Web ESS<br>
+                ✅ Track Salary Advance Requests<br>
+                ✅ HR & Admins to approval / reject applications<br>
+                ✅ Track Reports & Analytics<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-calculator"></i>
+            <h3>Step 6: Payroll Management</h3>
+            <p>
+                ✅ Visit 'People Management' & validate all active employees<br>
+                ✅ Terminate employees that have left the organization<br>
+                ✅ Visit 'Current Settings'<br>
+                ✅ Validate the Benefits and Allowances created<br>
+                ✅ Scan through all employees to ensure deductions and benefits have been updated<br>
+                ✅ Visit 'Payroll' -> 'Upload Payroll Data'<br>
+                - Now upload in bulk, allowances, benefits, and deductions to be assigned to employees<br>
+                ✅ Validate employee basic salaries or bulk upload to update<br>
+                ✅ Visit 'Payroll' -> 'Your Payrolls'<br>
+                - Create New Payroll<br>
+                - Next to Checking Employees to proceed with<br>
+                - Next to Payroll Approvals<br>
+                - Next to Payslips generation and sending<br>
+                - Finally, Print Muster Roll Report right from Reports -> Payroll Reports -> Muster Report<br>
+                - Print other necessary reports<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Step 7: Imports & Exports</h3>
+            <p>
+                ✅ Imports<br>
+                - Visit 'Data Tools'<br>
+                - Data Imports<br>
+                - Process any import needed from the provided cards<br>
+                - In addition, go to Payroll -> Upload Payroll Data<br> 
+                ✅ Exports<br>
+                - Visit 'Reports' -> 'Payroll Reports'<br>
+                @ SHIF & AHL<br>
+                @ P10 & P9<br>
+                @ NSSF (Tier I & Tier II)<br>
+                @ EARNINGS & DEDUCTIONS<br>
+                - Utilize reports provided<br>
+                - Visit 'General Reports'<br>
+                - Find additional customized reports<br>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Step 8: Analytics</h3>
+            <p>
+                ✅ Dashboard<br>
+                - Visit 'Dashboard'<br>
+                - Visit 'HR Analytics'<br>
+                - Visit 'Finance & Management Analytics'<br>
+            </p>
+        </div>
+    </div>
+    <script src="userGuide.js"></script>
+    <script src="protectCode.js"></script>
+</body>
+</html>
